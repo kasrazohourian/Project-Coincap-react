@@ -1,20 +1,39 @@
-import {Nav} from "./Components/Nav/index.jsx";
-import { Coins } from "./Components/firts-nav/index.jsx";
-import { Section } from "./Components/section/index.jsx";
-import { CoinsSection } from "./Components/coin-section/index.jsx";
+import { Home } from "./pages/Home.jsx";
+import { Exchange } from "./pages/Exchange.jsx";
+import { Contact } from "./pages/contact.jsx";
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/Coins",
+    element: <Home />,
+  },
+  {
+    path: "/Exchange",
+    element: <Exchange />,
+  },
+  {
+    path: "/Contact us",
+    element: <Contact />,
+  },
+
+]);
 
 
 function App() {
 
-
   return (
     
      <>
-     
-     <Nav />
-     <Coins />     
-     <Section />
-     <CoinsSection />
+
+  <RouterProvider router={router} />
     
      
      </>

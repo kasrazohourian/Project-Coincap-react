@@ -1,4 +1,8 @@
 import SettingsIcon from '@mui/icons-material/Settings';
+import {Link} from "react-router-dom";
+
+
+
 export function Coins (){
 
 
@@ -10,9 +14,9 @@ export function Coins (){
 <nav>  
     <div className="container nav-container" > 
     <div className="pages">
-    <a href="Coins">Coins</a>
-    <a href="Exchange">Exchange</a>
-    <a href="Contact us">Contact us</a>
+    <Link to="Coins">Coins</Link>
+    <Link to="Exchange">Exchange</Link>
+    <Link to="Contact us">Contact us</Link>
     </div>
      <div className="logo"> <img src="https://coincap.io/static/logos/black.svg" alt="" /></div>
 
