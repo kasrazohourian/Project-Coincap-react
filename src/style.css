@@ -6,7 +6,7 @@ body{
 
     display: flex;
     justify-content: center;
-    padding: 6px 16px;
+    padding: 60px 16px;
     height: 27px;
     -webkit-box-pack: center;
     gap: 8px;
