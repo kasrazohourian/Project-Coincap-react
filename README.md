@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 # coincap-react
 # Project-Coincap-react
 # Project-Coincap-react
+# Project-Coincap-react
