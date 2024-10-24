@@ -26,9 +26,9 @@ export function CoinsRow (props){
         <div>{numeral(priceUsd).format('$0,0.00')}</div>
         <div>{numeral(marketCapUsd).format('$0,0.00 a')}</div>
         <div>{numeral(vwap24Hr).format('$0,0.00')}</div>
-        <div>{numeral(supply).format('0,0')}</div>
-        <div>{numeral(volumeUsd24Hr).format('$0,0.00')}</div>
-        <div>{numeral(changePercent24Hr).format('0.00%')}</div>
+        <div>{numeral(supply).format('$0,0.00 a')}</div>
+        <div>{numeral(volumeUsd24Hr).format('$0,0.00 a')}</div>
+        <div>{numeral(changePercent24Hr).format('0.0%')}</div>
           </div>
 
 

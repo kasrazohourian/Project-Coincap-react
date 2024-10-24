@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { CoinsRow } from "../Coins-Row/coinsRow";
 import { getAssetsList } from "../data/server";
-import { lastContainar } from "../lastContainar";
 import TwitterIcon from '@mui/icons-material/Twitter';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
@@ -12,7 +11,7 @@ export function CoinsSection() {
 
   const [data, setData]= useState([]);
   const [page, setPage]= useState(1);
-  const limit = 100;
+  const limit = 20;
 
   useEffect(()=>{
     async function  fetchAssets () {
@@ -74,16 +73,17 @@ export function CoinsSection() {
             <a href="">Privacy Policy</a>
             <br /> <br /> 
             <div>DISCLAIMER <br />
-            <a href="">Neither ShapeShift AG nor CoinCap are in <br /> any way associated with CoinMarketCap, <br /> LLC or any of its goods and services</a></div>
+            <p className="DISCLAIMER">Neither ShapeShift AG nor CoinCap are in <br /> any way associated with CoinMarketCap, <br /> LLC or any of its goods and services</p></div>
           
         
 
           </div>
-          <div > FOLLOW US  <br /> <br />
-            <TwitterIcon/>
-    
-            <FacebookIcon/>
-
+          <div className="follow"> FOLLOW US  
+            <div className="icon">
+            <div className="twitter"> <TwitterIcon/></div>
+            <div className="facebook"><FacebookIcon/></div>
+            </div>
+ 
           
           </div>
           <div>COINCAP APP AVAILABLE ON
