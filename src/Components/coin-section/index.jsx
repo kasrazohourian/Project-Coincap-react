@@ -22,7 +22,7 @@ export function CoinsSection() {
 
     };
     fetchAssets();
-  }, []);
+  }, [page]);
 
   const moreCoins = async (event) =>{
     event.preventDefault();
