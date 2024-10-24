@@ -3,6 +3,8 @@ import { Coins } from "../Components/firts-nav"
 import { Section } from "../Components/section"
 import { CoinsSection } from "../Components/coin-section"
 
+
+
 export function Home() {
 
 
@@ -14,6 +16,9 @@ export function Home() {
        <Coins />     
        <Section />
        <CoinsSection />
+       
+
+    
       
   
       
